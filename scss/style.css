@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  background-color: #674baf;
+  background-image: url(../images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header {
+  width: 100%;
+}
+
+header .logo {
+  width: 135px;
+  padding: 25px 60px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 60px;
+}
+
+main .image-section {
+  width: 50%;
+  margin-right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .image-section .mockup {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+}
+
+main .text-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+main .text-section .description {
+  max-width: 460px;
+}
+
+main .text-section .description .heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 0;
+}
+
+main .text-section .description input[type="button"] {
+  outline: none;
+  border: none;
+  margin-top: 10px;
+  text-align: center;
+  height: 50px;
+  width: 180px;
+  font-size: 17px;
+  background-color: white;
+  color: #674baf;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+main .text-section .description input[type="button"]:hover {
+  cursor: pointer;
+  background-color: #e882e8;
+  color: white;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main .text-section .social-icons {
+  max-width: 460px;
+  text-align: right;
+  margin-top: 10px;
+}
+
+main .text-section .social-icons a {
+  text-decoration: none;
+}
+
+main .text-section .social-icons a i {
+  display: inline-block;
+  color: white;
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 17px;
+  width: 34px;
+  padding: 9px 0;
+  margin-left: 10px;
+  text-align: center;
+}
+
+main .text-section .social-icons a i:hover {
+  cursor: pointer;
+  color: #e882e8;
+}
+
+@media (max-width: 960px) {
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  main .text-section .description .heading {
+    margin-top: 0;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 675px) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+    background-position: top;
+    background-size: contain;
+  }
+  header .logo {
+    padding: 35px 40px 35px;
+  }
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 0 40px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  main .image-section {
+    width: 100%;
+    margin-bottom: 80px;
+  }
+  main .text-section {
+    width: 100%;
+    font-size: 15.5px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .text-section .description input[type="button"] {
+    width: 60%;
+    height: 35px;
+    font-size: 13px;
+  }
+  main .text-section .social-icons {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  main .text-section .social-icons a i {
+    font-size: 13px;
+    width: 30px;
+    padding: 8px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
